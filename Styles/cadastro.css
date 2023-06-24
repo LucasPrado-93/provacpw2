@@ -14,7 +14,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 
-
 }
 
 #form-container{
@@ -35,7 +34,7 @@ body{
     color: #fff;
     text-align: center;
 }
-#form-container #login-form input {
+#form-container #registration-form input {
     position: relative;
     width: 100%;
     padding: 10px 0;
@@ -48,7 +47,7 @@ body{
     background: transparent;
     
 }
-#form-container #login-form label {
+#form-container #registration-form label {
     position: relative;
     left: 0;
     top: -60px;
@@ -58,8 +57,8 @@ body{
     transition: .5s;
 
 }
-#form-container #login-form input:focus~label,
-#form-container #login-form input:valid~label{
+#form-container #registration-form input:focus~label,
+#form-container #registration-form input:valid~label{
     top: -85px;
     left: 0;
     color: #8F7CEC;
@@ -68,6 +67,15 @@ body{
 #result-panel{
     margin: 0;
     color: #FFF;
+}
+#login-link{
+    color: #fff;
+}
+#result-login{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
 
 #submit-button{
@@ -96,18 +104,4 @@ body{
 display: flex;
 flex-direction: row;
 margin-top: 20px;
-}
-#register {
-    font-size: 14px;
-    text-decoration: none;
-    color: #ffffff;
-    margin: auto;
-    width: 60%;
-    text-align: center;
-}
-
-#register a {
-    margin: auto;
-    color: #8F7CEC;
-    text-decoration: none;
 }

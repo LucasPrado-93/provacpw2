@@ -34,11 +34,11 @@ const onSubmitLoginForm = (event) => {
       const { code } = error
 
       if (authStatuses.includes(code)) {
-        errorMessage = 'Usuário não autenticado'
+        errorMessage = 'Usuário/senha  incorreto !'
       }
 
       $('result-panel').innerText = errorMessage
     })
 }
 
-$('alert').onsubmit = onSubmitLoginForm
+$('login-form').onsubmit = onSubmitLoginForm

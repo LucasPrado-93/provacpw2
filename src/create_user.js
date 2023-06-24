@@ -22,13 +22,15 @@ const onSubmitRegistrationForm = (event) => {
          */
         const resultPanel = $('result-panel')
         const htmlContent = `
-          <span id="success-message">
+        <div id="result-login">
+          <span style="color:#41fd08" id="success-message">
             Usuário cadastrado com sucesso!
           </span>
 
           <a id="login-link" href="login.html">
             Clique aqui para fazer login
           </a>
+          <div/>
         `
         resultPanel.innerHTML = htmlContent
       })
